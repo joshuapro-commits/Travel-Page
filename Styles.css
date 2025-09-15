@@ -7,36 +7,26 @@ body{
     font-family: 'Roboto';
     flex-direction: column;
     margin:0;
-    color:whiye
-}
-
-.header{
-    border:2px solid;
-    background-color: #1F2937;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
-}
-ul{
-    display:flex;
-    list-style-type: none;
-    gap:19px;
-    
-}
-li{
-    font-size: 18px;
-    color:#E5E7EB;
 }
 .navbar{
-    border:2px solid;
     display:flex;
+    background-color:#1F2937;
+    color:white;
+    min-width:75%;
+    margin:0 auto;
     justify-content: space-between;
-    padding:16px;
-    align-items: center;
+    padding:14px;
+    align-items:center;
 }
 .navbar p{
-    font-size: 24px;
-    color:#F9FAF8;
+    font-size:24px;
+    color:#F9FAF8
+}
+
+ul{
+    display:flex;
+    list-style: none;
+    gap:19px;
+    color:#E5E7EB;
+    font-size:18px;
 }
