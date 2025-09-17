@@ -9,6 +9,39 @@ body{
     font-family: 'Roboto';
     flex-direction: column;
     margin:0;
-
+    
 }
-.
+.nav{
+    max-width:100%;
+    background-color:#1F2937;
+}
+.nav-items{
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    max-width:68%;
+    justify-content:space-between;
+   
+    color:white;
+}
+ul{
+    display:flex;
+    list-style: none;
+    gap:17px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.hero-section{
+    max-width:100%;
+    background-color:#1F2937;
+}
+.hero-items{
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    max-width:68%;
+   
+    color:white;
+}
