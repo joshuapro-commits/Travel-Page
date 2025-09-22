@@ -6,32 +6,38 @@
 }
 body{
     /* Ensures the body takes the full viewport height so flex children can fill space */
-    height:100vh;
+    min-height:100vh;
+    width:100vw;
     display:flex;
     font-family: 'Roboto';
     flex-direction: column;
     margin:0;
+    scroll-behavior: smooth;
     
 }
 h1{
     font-family:'Lobster';
 }
+.selections h2{
+    color:#1F2937;
+    font-weight: 900;
+   
+}
+
 .selections{
     display:flex;
     flex-direction:column;
     align-items:center;
     width:100%;
     background-color:white;
-    min-height:32%;
-    border:1px solid;
-    border-bottom-color: blue;
+    min-height:40%;
     padding-bottom:40px;
-
+    gap:30px;
 
 }
 .inner-box{
-    height:150px;
-    width:150px;
+    height:180px;
+    width:180px;
     border-radius:13px;
     margin-bottom:10px;
 
@@ -39,6 +45,7 @@ h1{
 .boxes{
     border-radius:20px;
     flex:1 1 0;
+    text-align:center;
 }
 .whole-box{
     display:flex;
@@ -51,12 +58,11 @@ img{
     height:100%;
     object-fit:cover;
     display:inline-block;
-    border-radius:20px;
-}
-.box-image{
-  
+    border-radius:23px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3)
     
 }
+
 p{
     font-size:18px;
     font-family:'Open Sans'
@@ -78,10 +84,17 @@ p{
     display:inline-block;
     padding:10px;
     background-color:royalblue;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
     color:white;
     text-align:center;
     border-radius:10px;
     width:150px;
+    transition: 0.4s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.button:hover{
+    box-shadow: 0 0 10px #ff6ec4, 0 0 10px #7873f5;
+  transform: scale(1.05);
 }
 
   
@@ -110,12 +123,12 @@ a{
 .hero-section{
     max-width:100%;
     background-color:#1F2937;
-    max-height:60%;
+    min-height:60%;
     display:flex;
     align-items:center;
     padding-top:40px;
-     padding-bottom: 60px;
-     gap:40px;
+    padding-bottom: 60px;
+    gap:40px;
 
 }
 .hero-items{
@@ -125,5 +138,42 @@ a{
     width:68%;
     color:white;
     gap:60px;
+   
+}
+.qoute-section{
+    display:flex;
+    min-height:40%;
+    max-width:100%;
+    background-color:#E5E7EB;
+    justify-content:center;
+    align-items:center;
+    font-style:italic;
+
+}
+.qoute-text{
+    font-size:25px;
+}
+
+.qoute-container{
+    display:flex;
+    flex-direction:column;
+}
+.qoute-author{
+    margin-left:auto;
+    font-size:15px;
+
+}
+.Call{
+    min-height:30%;
+    display:flex;
+   
+}
+.call-container{
+    width:68%;
+    padding:20px;
+    align-self:center;
+    background-color:#3882F6;
+    margin:0 auto;
+    color:white;
    
 }
