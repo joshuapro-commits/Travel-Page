@@ -191,3 +191,12 @@ a{
     align-items:center;
 
 }
+.footer{
+    max-width:100%;
+    display:flex;
+    color:white;
+    background-color:#1F2937;
+    min-height:10%;
+    align-items: center;
+    justify-content:center;
+}
