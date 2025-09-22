@@ -6,7 +6,7 @@
 }
 body{
     /* Ensures the body takes the full viewport height so flex children can fill space */
-    min-height:100vh;
+    height:100dvh;
     width:100vw;
     display:flex;
     font-family: 'Roboto';
@@ -59,7 +59,8 @@ img{
     object-fit:cover;
     display:inline-block;
     border-radius:23px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3)
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
     
 }
 
@@ -170,10 +171,23 @@ a{
 }
 .call-container{
     width:68%;
-    padding:20px;
+    padding:50px;
     align-self:center;
     background-color:#3882F6;
     margin:0 auto;
     color:white;
-   
+   display:flex;
+   align-items:center;
+   gap:30px;
+   justify-content:space-between;
+}
+.call-container .title .header{
+    font-size:1.4rem;
+    font-weight:900;
+} 
+.Button-Container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
 }
